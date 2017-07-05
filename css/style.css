@@ -1,0 +1,184 @@
+html, body, header, nav, h1, h3, a,
+ul, li, strong, main, button,
+section, img, div, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: sans-serif;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+  list-style: none;
+
+  /*border: 1px solid black;*/
+}
+
+
+.header {
+  display: flex;
+  /*position: fixed;*/
+  background: #fff;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+  justify-content: space-between;
+}
+
+.header .left-menu {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.header .logo {
+  display: flex;
+  text-transform: uppercase;
+  letter-spacing: .2px;
+  margin-right: 70px;
+}
+
+.header .logo h1:last-child {
+  font-weight: 400;
+}
+
+.header .left-menu {
+  margin: auto 2%;
+}
+
+.subtitle {
+  text-align: center;
+  background: #f7f7f7;
+  padding: 40px 0;
+}
+
+.subtitle h3 {
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+.filters-container {
+  display: flex;
+  font-size: .65em;
+  letter-spacing: 2px;
+  font-weight: 300;
+  border: 1px solid #eeeeee;
+}
+
+.filters-container .filters-list {
+  display: flex;
+  margin-left: 15px;
+}
+
+.filters-container .filters-list .drop-down-menu {
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  padding: 15px 50px;
+  border-left: 1px solid #eeeeee;
+  border-right: none;
+}
+
+.filters-container .filters-list .drop-down-menu:last-child {
+  border-right: 1px solid #eeeeee;
+}
+
+.filters-container .filters-list .drop-down-menu:hover .filters {
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+  text-transform: capitalize;
+  top: 100%;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  margin-left: -1px;
+  align-items: center;
+  border: 1px solid #eee;
+  border-top: 0;
+}
+
+.filters-container .filters-list .drop-down-menu .filters {
+  display: none;
+}
+.filters-container .filters-list .drop-down-menu .filters p {
+  line-height: 3em;
+  text-align: center;
+}
+
+.filters-container .filters-list .drop-down-menu .filters p:hover {
+  text-decoration: underline;
+}
+
+.filters-container .products-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  overflow: auto;
+  padding: 2px;
+}
+
+.filters-container .products-details .current-filters {
+  cursor: pointer;
+  display: flex;
+  font-size: .2em;
+}
+
+.filters-container .products-details .current-total-products {
+  margin: auto 0;
+}
+
+.filters-container .products-details .current-filters p {
+  padding: 2px;
+}
+
+.filters-container .products-details .current-filters p:hover {
+  text-decoration: underline;
+}
+
+.product-container {
+  margin: 20px auto;
+
+}
+
+
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 80px;
+  max-width: 1300px;
+}
+
+.product-list li {
+  margin: 0 auto;
+  width: 18%;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.product-list li img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.product-list li p {
+  margin: 10px 0;
+  letter-spacing: 1.5px;
+  font-size: .9em;
+}
+
+.product-list li p:last-child {
+  color: #666;
+}
