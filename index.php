@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./suits_page.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Black Suits</title>
+    <style>
+      <?php include "css/style.css"; ?>
+    </style>
   </head>
   <body>
     <div class="header">
