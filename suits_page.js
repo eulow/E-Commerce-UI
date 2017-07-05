@@ -33,12 +33,17 @@ class Suits {
 
   getSuits () {
     const that = this;
+
     return (
       $.ajax({
         type: "GET",
-        url: "suit_resolver.php",
+        url: "suits.json",
+        dataType: "json",
         success: function (data) {
-          that.totalSuits = JSON.parse(data);
+          const suits = data[0]['data'].map((suit) => {
+            return suit['row'];
+          });
+          that.totalSuits = suits;
         },
       })
     );
